@@ -1,0 +1,468 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  * {
+   font-family: 'Montserrat', -apple-system, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+  body{
+      background-color: aliceblue;
+      margin: 0;
+      padding-top: 120px;
+  }
+  header{
+   height: 150px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 90px auto;
+   text-align: center;
+   align-items: center;
+   background-color: white;
+   color: black;
+   gap: 20px;
+   position: fixed;
+   top: 0;
+   border: 1px solid black;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+}
+  footer{
+     background-color: white;
+     color: black;
+     padding: 20px;
+     margin: 50px 0px 0px 0px;
+     border-top:5px solid rgb(112, 112, 194) ;
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto;
+     justify-content: center;
+  }
+  main{
+     width: 100%;
+     justify-content: center;
+     display: flex;
+  }
+
+
+
+
+
+
+.footer-grl{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 100px;
+   border-bottom: 2px solid rgb(112, 112, 194);
+}
+.redes ul{
+   list-style: none;
+   display: grid;
+   grid-template-columns: 50px 50px 50px;
+   gap: 15px;
+   justify-content: right;
+}
+.redes svg{
+   width: 25px;
+}
+.footer-pag{
+   width: auto;
+   justify-content: start;
+   display: grid;
+   grid-template-columns: 100px auto;
+  }
+.footer-pag img{
+   margin: 5px 0px auto 0px;
+   border-radius: 50%;
+   width: 60%;
+}
+.footer-pag h2{
+   padding-top: 40px;
+   color: black;
+   font-size: auto;
+   margin-bottom: auto;
+   width: max-content;
+}
+footer p{
+   text-align:start;
+   display: flex;
+   justify-content: flex-start;
+   margin: 5px 0px 10px 0px;
+   font-family: 'Montserrat', -apple-system, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+}
+footer p a{
+   color: rgb(73, 73, 226);
+   margin-left: 5px;
+}
+
+  
+  
+  
+
+
+
+
+
+.nombre-pagina{
+ align-items: center;
+ display: grid;
+ width: 90px;
+}
+.nombre-pagina img{
+ margin: 5px 5px 10px 50px;
+ width: 90px;
+}
+
+.calendario summary {
+   display: inline-flex;
+   align-items: center;
+   cursor: pointer;
+}
+.calendario h1 {
+   margin: 0;
+   flex: 1;
+}
+.calendario summary::marker {
+   display: none;
+}
+.calendario summary::before {
+   content: '▶';
+   margin-right: 8px;
+   font-size: 1em;
+   transition: transform 0.3s ease;
+}
+.calendario[open] summary::before {
+   transform: rotate(90deg);
+}
+  .cal-mes{
+     color: black;
+  }
+  .calendario{
+     margin-left: 5%;
+     width: fit-content;
+     display: inline-block;
+  }
+  .calendario ul{
+     position: absolute;
+     border: 2px solid black;
+     border-radius: 15px;
+     padding: 10px;
+     list-style: none;
+     display: grid;
+     grid-template-columns:  max-content max-content max-content ;
+     grid-template-rows: max-content max-content;
+     background-color: white;
+     gap: 5px;
+     transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .calendario[open] ul {
+   transform: scaleY(1);
+   opacity: 1;
+}
+  .cal li{
+   font-weight: bold;
+   background-color: lightblue;
+     border: 1px solid black;
+     align-items: center;
+     text-align: center;
+     height: 35px;
+     padding: 7px ;
+     border-radius: 15px;
+  }
+
+
+
+
+
+
+  p{
+     padding: 15px;
+  }
+  h2{
+     color: black;
+  }
+  a{
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  .contain-all{
+   justify-content: center;
+   width: 75%;
+   margin-top: 70px;
+  }
+  section{
+     background-color: lightblue;
+     width: 100%;
+     height: auto;
+     border-radius: 30px;
+     display: grid;
+     justify-content: center;
+  }
+  article{
+     background-color: white;
+     color: black;
+     padding: 15px;
+     align-items: center;
+     height: auto;
+     border-radius: 10px;
+     width: 100%;
+     margin-top: 20px;
+  }
+  article img{
+     width: 50%;
+     height: auto;
+    margin: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+  section div{
+     margin: 10px;
+     border-radius: 10px;
+  }
+iframe{
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+article ul{
+    list-style: none;
+    margin: 20px;
+}
+article ul li{
+    margin: 5px;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+   header{
+      height: 90px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 40px auto;
+      text-align: center;
+      align-items: center;
+      background-color: white;
+      color: black;
+      position: fixed;
+      top: 0;
+      border: 1px solid black;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: grid;
+      grid-template-columns: 90px auto;
+      gap: 5px;
+   }
+
+
+   .inicio{
+      margin-left: 80%;
+      font-size: 20px;
+      width: fit-content;
+      height: fit-content;
+   }
+   .inicio:hover{
+      transition: 0.5s ease;
+      background-color: lightblue;
+      color: black;
+      border-radius: 15px;
+      padding: 10px 5px 10px 5px;
+   }
+   .calendario summary {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+   }
+   .calendario h1 {
+      margin: 0;
+      flex: 1;
+      font-size: 20px;
+   }
+   .calendario summary::marker {
+      display: none;
+   }
+   .calendario summary::before {
+      content: '▶';
+      margin-right: 8px;
+      font-size: 1em;
+      transition: transform 0.3s ease;
+   }
+   .calendario[open] summary::before {
+      transform: rotate(90deg);
+   }
+     .cal-mes{
+        color: black;
+     }
+     .calendario{
+        margin-left: 5%;
+        width: fit-content;
+        display: inline-block;
+     }
+     .calendario ul{
+      margin-top: 30px;
+       margin-left: -55px;
+        position:absolute;
+        border-radius: 15px;
+        padding: 10px;
+        list-style: none;
+        display: grid;
+        grid-template-columns:  max-content max-content ;
+        grid-template-rows: max-content max-content max-content;
+        background-color: white;
+        gap: 5px;
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        will-change: transform, opacity;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+     }
+     .calendario[open] ul {
+      transform: scaleY(1);
+      opacity: 1;
+   }
+     .cal li{
+      font-weight: bold;
+      background-color: lightblue;
+        border: 1px solid black;
+        align-items: center;
+        text-align: center;
+        height: 35px;
+        padding: 7px ;
+        border-radius: 15px;
+     }
+   
+
+.nombre-pagina{
+ align-items: center;
+ display: grid;
+ width: 40px;
+}
+.nombre-pagina img{
+ margin: 5px 5px 10px 20px;
+ width:50px;
+}
+
+
+
+
+
+section h2{
+   color: black;
+   padding: 10px;
+   margin:10px 0px;
+   font-size: 20px;
+}
+
+.contain-all{
+    justify-content: center;
+    width: 75%;
+    margin-top: 20px;
+   }
+   section{
+      background-color: lightblue;
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+      display: grid;
+      justify-content: center;
+   }
+   article{
+      background-color: white;
+      color: black;
+      align-items: center;
+      height: auto;
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+   }
+   article img{
+      width: 90%;
+      height: auto;
+    border-radius: 15px;
+    border: 1px solid black;
+   }
+   section div{
+      border-radius: 10px;
+   }
+ iframe{
+     height: 100%;
+     width: 100%;
+     border-radius: 15px;
+     margin-top: 10px;
+ }
+
+
+
+  footer{
+   background-color: white;
+   color: black;
+   padding: 10px;
+   margin: 50px 0px 0px 0px;
+   border-top:5px solid rgb(112, 112, 194) ;
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: auto auto;
+   justify-content: center;
+}
+.footer-grl{
+ display: grid;
+ grid-template-columns: auto auto;
+ gap: 10px;
+ border-bottom: 2px solid rgb(112, 112, 194);
+}
+.redes ul{
+ list-style: none;
+ display: grid;
+ grid-template-columns: 50px 50px 50px;
+ gap: 15px;
+ justify-content: right;
+}
+.redes svg{
+ width: 20px;
+}
+.footer-pag{
+ width: auto;
+ justify-content: start;
+ display: grid;
+ grid-template-columns: 100px auto;
+}
+.footer-pag img{
+ margin: 5px 0px 0px 0px;
+ width: 50%;
+}
+.footer-pag h2{
+   padding-top: 40px;
+   color: black;
+   font-size: auto;
+   margin-bottom: auto;
+   width: max-content;
+   font-size: 17px;
+  }
+footer p{
+ text-align:start;
+ display: flex;
+ justify-content: flex-start;
+ margin: 5px 0px 10px 0px;
+ font-family: 'Montserrat', -apple-system, sans-serif;
+ font-size: 13px;
+ font-weight: bold;
+}
+
+}
+
+
