@@ -231,6 +231,9 @@ footer p a{
      margin: 10px;
      border-radius: 10px;
   }
+section h2{
+    margin-top: 15px;
+ }
 iframe{
     height: 500px;
     width: 100%;
