@@ -174,8 +174,9 @@ footer p a{
    color: rgb(73, 73, 226);
    margin-left: 5px;
 }
-
-  
+footer span{
+  color: darkgrey;
+}
   
   
 
