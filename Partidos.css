@@ -460,7 +460,7 @@ section h2{
   }
 footer p{
  text-align:start;
- display: flex;
+ display: inline;
  justify-content: flex-start;
  margin: 5px 0px 10px 0px;
  font-family: 'Montserrat', -apple-system, sans-serif;
