@@ -416,7 +416,7 @@ section h2{
   footer{
    background-color: white;
    color: black;
-   padding: 10px 50px 10px 50px;
+   padding: 10px;
    margin: 50px 0px 0px 0px;
    border-top:5px solid rgb(112, 112, 194) ;
    display: grid;
